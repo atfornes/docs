@@ -2,7 +2,7 @@
 # OwnPush Developer Documentation #
 ## Overview ##
 OwnPush is a Fastboot product, designed to offer an innovative and open source solution to the challenge of providing push notifications to Android devices. OwnPush provides end-to-end encrypted push messages, is simple to integrate, and battery-light and does not rely on Google Cloud Messaging (GCM), or require that devices have Google Services available, in order to function. It is completely independent.  
-<img src="https://ownpush.com/wp-content/uploads/2016/02/ownpush_structural.png">
+  <img src="https://ownpush.com/wp-content/uploads/2016/02/ownpush_structural.png">
 
 ## Setting Up a New App Using OwnPush ##
 ### Generate key pairs (API & APP) ###
@@ -56,4 +56,6 @@ The data within the body is encrypted with the APP private key and the INSTALL p
 ```
 This data is then encoded into b64 format and signed via the NaCl library as sign(b64(header).b64(body) and the final data sent to the api is in the format
 
-```b64(header).b64(body).b64(signature)```
+```
+b64(header).b64(body).b64(signature)
+```
